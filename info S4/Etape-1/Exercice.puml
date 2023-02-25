@@ -1,0 +1,26 @@
+@startuml
+
+:b=faux;
+:c=0;
+:i est une variable aleatoire;
+:Affiche "i";
+while (b existe pas?) 
+:Affiche "Entrez un nombre";
+:s affiche "b";
+while(s is not digit) 
+:Affiche "Ce n'est pas un entier, recommencez";
+:s Affiche b;
+:j est l'entier de s;
+endWhile
+if (j>i)
+:Affiche "trop Grand";
+elseif (j<i)
+:Affiche "trop Petit";
+else
+:b=true;
+endif
+:c=c+1;
+endWhile
+:Affiche "Score = c"; 
+@enduml
+
